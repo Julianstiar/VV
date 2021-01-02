@@ -7,6 +7,7 @@
 <body>
 
 <p id="demo" style="text-align:center;font-size: 60px;margin-top: 0px;"></p>
+<a id="d" style ="display:none;" href="http://bit.ly/38WB1ab">Click Me</a>
 
 <script>
 // Set the date we're counting down to
@@ -34,7 +35,8 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").style.display = "none";
+    document.getElementById("d").style.display = "block";
   }
 }, 1000);
 </script>
